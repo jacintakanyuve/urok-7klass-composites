@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Труд (технология) 7 класс: Классификация конструкционных материалов. Композиционные материалы</title>
+  <style>
+    :root {
+      --bg: #f1f5f9;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --primary: #1d4ed8;
+      --primary-dark: #1e3a8a;
+      --primary-light: #dbeafe;
+      --accent: #0f766e;
+      --accent-light: #ccfbf1;
+      --success: #059669;
+      --success-light: #d1fae5;
+      --warning: #d97706;
+      --warning-light: #fef3c7;
+      --danger: #dc2626;
+      --danger-light: #fee2e2;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #cbd5e1;
+      --radius: 16px;
+      --shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 56px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
+    }
+
+    .topbar-inner {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .topbar-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .date-pill {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .timer-box {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transition: width 0.35s ease;
+    }
+
+    .nav-pills {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-top: 10px;
+      scrollbar-width: none;
+    }
+
+    .nav-pills::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-pill {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      padding: 8px 14px;
+      min-height: 44px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .nav-pill.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .nav-pill.done {
+      border-color: var(--success);
+      color: var(--success);
+      background: var(--success-light);
+    }
+
+    .nav-pill.active.done {
+      background: var(--success);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 20px auto 0;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(203, 213, 225, 0.75);
+    }
+
+    .module {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .module.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 1.52rem;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.28rem;
+      margin-bottom: 12px;
+      color: var(--primary-dark);
+    }
+
+    h3 {
+      font-size: 1.06rem;
+      margin: 16px 0 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    ul, ol {
+      margin: 8px 0 14px 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .time-tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 4px 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .callout {
+      background: var(--surface-soft);
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 0 12px 12px 0;
+      margin: 14px 0;
+    }
+
+    .callout.warn {
+      border-left-color: var(--warning);
+      background: var(--warning-light);
+    }
+
+    .callout.success {
+      border-left-color: var(--success);
+      background: var(--success-light);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin: 14px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 12px;
+      margin: 14px 0;
+    }
+
+    .info-box {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .info-box strong {
+      display: block;
+      font-size: 1.02rem;
+      margin-bottom: 6px;
+      color: var(--primary-dark);
+    }
+
+    .interactive-zone {
+      background: #f8fafc;
+      border: 2px dashed #93c5fd;
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    .interactive-title {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 18px;
+      min-height: 44px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-secondary {
+      background: #e2e8f0;
+      color: var(--text);
+    }
+
+    .btn-secondary:hover {
+      background: #cbd5e1;
+    }
+
+    .btn-success {
+      background: var(--success);
+    }
+
+    .btn-success:hover {
+      background: #047857;
+    }
+
+    .btn-sm {
+      padding: 8px 14px;
+      min-height: 44px;
+      font-size: 0.88rem;
+      border-radius: 9px;
+    }
+
+    .nav-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 11px 14px;
+      min-height: 44px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 1rem;
+      margin: 8px 0 12px;
+    }
+
+    /* Ментальная карта */
+    .mindmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      gap: 10px;
+      margin: 12px 0;
+    }
+
+    .mm-node {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      min-height: 44px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.18s;
+      font-family: inherit;
+      color: var(--text);
+    }
+
+    .mm-node:hover {
+      border-color: var(--primary);
+      background: #eff6ff;
+    }
+
+    .mm-node.active {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      box-shadow: 0 3px 12px rgba(29, 78, 216, 0.14);
+    }
+
+    .mm-node-title {
+      font-weight: 800;
+      font-size: 0.93rem;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .mm-node-sub {
+      font-size: 0.81rem;
+      color: var(--text-muted);
+    }
+
+    /* Карточки выбора */
+    .sort-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+
+    .sort-item-text {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .sort-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .choice-btn {
+      background: var(--surface-soft);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      min-height: 44px;
+      border-radius: 9px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .choice-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .choice-btn.selected {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .choice-btn.correct {
+      background: var(--success);
+      color: #fff;
+      border-color: var(--success);
+    }
+
+    .choice-btn.wrong {
+      background: var(--danger);
+      color: #fff;
+      border-color: var(--danger);
+    }
+
+    /* SVG сцены */
+    .svg-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 12px 0;
+      text-align: center;
+      overflow-x: auto;
+    }
+
+    .svg-box svg {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Таблица примеров композитов */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 12px 0;
+    }
+
+    table.mat-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      font-size: 0.9rem;
+      min-width: 540px;
+    }
+
+    table.mat-table th, table.mat-table td {
+      border: 1px solid var(--border);
+      padding: 9px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    table.mat-table th {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    /* Лаборатория конструктора композитов (Модуль 3) */
+    .lab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+      gap: 16px;
+      align-items: start;
+      margin-top: 12px;
+    }
+
+    .mission-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .m-badge {
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 5px 11px;
+      border-radius: 8px;
+      background: #e2e8f0;
+      color: var(--text-muted);
+    }
+
+    .m-badge.solved {
+      background: var(--success-light);
+      color: #065f46;
+    }
+
+    .telemetry-panel {
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: "Courier New", Courier, monospace;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 0.87rem;
+      line-height: 1.65;
+      margin-top: 10px;
+    }
+
+    .telemetry-panel strong {
+      color: #38bdf8;
+    }
+
+    .meter-row {
+      margin-top: 6px;
+    }
+
+    .meter-track {
+      width: 100%;
+      height: 8px;
+      background: #1e293b;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 3px;
+    }
+
+    .meter-fill {
+      height: 100%;
+      background: #34d399;
+      transition: width 0.3s ease;
+    }
+
+    /* Тест */
+    .quiz-q {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .quiz-opt {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 11px 14px;
+      min-height: 44px;
+      margin-top: 8px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.93rem;
+      transition: all 0.15s;
+    }
+
+    .quiz-opt:hover {
+      border-color: var(--primary);
+    }
+
+    .quiz-opt.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      font-weight: 600;
+    }
+
+    .quiz-opt.correct {
+      border-color: var(--success);
+      background: var(--success-light);
+      color: #065f46;
+      font-weight: 700;
+    }
+
+    .quiz-opt.wrong {
+      border-color: var(--danger);
+      background: var(--danger-light);
+      color: #991b1b;
+    }
+
+    .quiz-explain {
+      display: none;
+      margin-top: 10px;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-size: 0.87rem;
+      background: var(--warning-light);
+      border-left: 3px solid var(--warning);
+      color: #78350f;
+    }
+
+    /* Карточка результата */
+    .cert-box {
+      border: 3px solid var(--primary);
+      background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+      border-radius: 18px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    .cert-date-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin: 6px 0 4px;
+    }
+
+    .cert-grade {
+      display: inline-block;
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--success);
+      background: var(--success-light);
+      padding: 8px 24px;
+      border-radius: 12px;
+      margin: 12px 0;
+    }
+
+    .feedback {
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 0.93rem;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 16px; }
+      h1 { font-size: 1.32rem; }
+      h2 { font-size: 1.16rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-row">
+        <span class="badge">Труд (технология) • 7 класс</span>
+        <span class="date-pill">Дата: 26.11.2026</span>
+        <span class="timer-box" id="timerDisplay">Время: 00:00 / 45:00</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressBar"></div>
+      </div>
+      <nav class="nav-pills" id="navPills">
+        <button class="nav-pill active" onclick="goToStep(0)">Старт</button>
+        <button class="nav-pill" onclick="goToStep(1)">1. Классификация материалов</button>
+        <button class="nav-pill" onclick="goToStep(2)">2. Композиционные материалы</button>
+        <button class="nav-pill" onclick="goToStep(3)">3. Лаборатория композитов</button>
+        <button class="nav-pill" onclick="goToStep(4)">4. Итоговый контроль</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ШАГ 0: ВВЕДЕНИЕ -->
+    <section class="module active" id="step-0">
+      <div class="card">
+        <span class="time-tag">Самостоятельный урок • 45 минут • 26 ноября 2026 г.</span>
+        <h1>Классификация конструкционных материалов. Композиционные материалы</h1>
+        <p>Почему крылья современных авиалайнеров и рамы гоночных велосипедов уже почти не делают из тяжёлой стали, а корпуса лодок не ржавеют в солёной воде? Ответ кроется в современном материаловедении и появлении <strong>композиционных материалов</strong> — искусственно созданных «суперматериалов», объединяющих достоинства разных веществ.</p>
+        <p>На этом уроке ты систематизируешь все группы <strong>конструкционных материалов</strong>, разберёшь внутреннее строение композитов (<strong>матрица + наполнитель</strong>) и сконструируешь материалы для 3 реальных инженерных заказов.</p>
+
+        <div class="callout">
+          <strong>План работы на урок (45 минут):</strong><br />
+          1. Изучить 5 групп конструкционных материалов по ментальной карте и пройти классификатор.<br />
+          2. Рассмотреть 3 структуры композитов на SVG-разрезах и разобрать состав 4 известных композитов.<br />
+          3. Создать в интерактивной лаборатории 3 композитных материала под заказы и выполнить итоговый тест (8 вопросов).
+        </div>
+
+        <label for="studentNameInput"><strong>Введи фамилию, имя и класс перед началом:</strong></label>
+        <input type="text" id="studentNameInput" class="input-field" placeholder="Например: Орлов Кирилл, 7-А" />
+
+        <div class="nav-footer">
+          <span></span>
+          <button class="btn" onclick="startLesson()">Начать урок →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ШАГ 1: КЛАССИФИКАЦИЯ КОНСТРУКЦИОННЫХ МАТЕРИАЛОВ -->
+    <section class="module" id="step-1">
+      <div class="card">
+        <span class="time-tag">Модуль 1 • Рекомендуемое время: 11 минут</span>
+        <h2>1. Конструкционные материалы: классификация и свойства</h2>
+        <p><strong>Конструкционные материалы</strong> — это материалы, из которых изготавливают детали машин, механизмов, приборов, зданий и различных изделий, воспринимающих механические нагрузки.</p>
+
+        <h3>Три главные группы свойств конструкционных материалов:</h3>
+        <div class="grid-3">
+          <div class="info-box">
+            <strong>Механические свойства</strong>
+            Способность сопротивляться внешним силам: <em>прочность, твёрдость, упругость, пластичность, износостойкость</em>.
+          </div>
+          <div class="info-box">
+            <strong>Физические свойства</strong>
+            Внутренняя природа вещества: <em>плотность (лёгкость/тяжесть), теплопроводность, электропроводность, температура плавления</em>.
+          </div>
+          <div class="info-box">
+            <strong>Технологические свойства</strong>
+            Способность поддаваться обработке: <em>обрабатываемость резанием, свариваемость, ковкость, литейные свойства</em>.
+          </div>
+        </div>
+
+        <h3>Интерактивная ментальная карта: Основные классы конструкционных материалов</h3>
+        <p style="font-size: 0.92rem;">Нажимай на каждый класс материалов, чтобы раскрыть его состав, плюсы и область применения:</p>
+
+        <div class="mindmap-grid" id="matMindmap">
+          <button class="mm-node active" onclick="showMatNode('metals', this)">
+            <div class="mm-node-title">1. Металлы и сплавы</div>
+            <div class="mm-node-sub">Чёрные и цветные</div>
+          </button>
+          <button class="mm-node" onclick="showMatNode('wood', this)">
+            <div class="mm-node-title">2. Древесные</div>
+            <div class="mm-node-sub">Массив, фанера, ДВП</div>
+          </button>
+          <button class="mm-node" onclick="showMatNode('polymers', this)">
+            <div class="mm-node-title">3. Полимеры</div>
+            <div class="mm-node-sub">Пластмассы и резина</div>
+          </button>
+          <button class="mm-node" onclick="showMatNode('ceramics', this)">
+            <div class="mm-node-title">4. Керамика и стекло</div>
+            <div class="mm-node-sub">Жаростойкость и твёрдость</div>
+          </button>
+          <button class="mm-node" onclick="showMatNode('composites', this)">
+            <div class="mm-node-title">5. Композиты</div>
+            <div class="mm-node-sub">Матрица + наполнитель</div>
+          </button>
+        </div>
+
+        <div class="callout" id="matNodeDetail"></div>
+
+        <div class="interactive-zone">
+          <div class="interactive-title">Тренажёр: Классифицируй материалы и их свойства</div>
+          <p style="font-size: 0.92rem;">Выбери верный ответ для каждого из 5 примеров:</p>
+          <div id="m1Container"></div>
+          <button class="btn btn-sm" onclick="checkM1()">Проверить ответы</button>
+          <div class="feedback" id="m1Feedback"></div>
+        </div>
+
+        <div class="nav-footer">
+          <button class="btn btn-secondary" onclick="goToStep(0)">← Назад</button>
+          <button class="btn" onclick="goToStep(2)">Дальше: Композиционные материалы →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ШАГ 2: КОМПОЗИЦИОННЫЕ МАТЕРИАЛЫ -->
+    <section class="module" id="step-2">
+      <div class="card">
+        <span class="time-tag">Модуль 2 • Рекомендуемое время: 13 минут</span>
+        <h2>2. Устройство, виды и примеры композиционных материалов</h2>
+        <p><strong>Композиционный материал (композит)</strong> — это неоднородный сплошной материал, созданный путём объёмного сочетания двух или более разнородных компонентов с чёткой границей раздела между ними.</p>
+
+        <div class="grid-2">
+          <div class="info-box" style="border-left: 4px solid var(--primary);">
+            <strong>1. Матрица (связующее)</strong>
+            Непрерывная основа композита (полимерная смола, цементный камень, клей, металл). Удерживает наполнитель в единой форме, защищает его от влаги и передаёт на него внешнюю нагрузку.
+          </div>
+          <div class="info-box" style="border-left: 4px solid var(--accent);">
+            <strong>2. Наполнитель (армирующий компонент)</strong>
+            Твёрдые и высокопрочные волокна, стержни, слои или частицы (углеволокно, стекловолокно, стальная арматура, шпон). Принимает на себя основную механическую нагрузку, задавая прочность и жёсткость.
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <strong>Секрет композитов (синергетический эффект):</strong> Композит приобретает свойства, которыми <em>не обладает ни один из его компонентов по отдельности</em>. Например, бетон отлично держит сжатие, но легко ломается на изгиб; стальной прут гнётся, но прочен на растяжение. Вместе они образуют <strong>железобетон</strong>, выдерживающий огромные нагрузки в мостах и небоскрёбах!
+        </div>
+
+        <div class="interactive-zone">
+          <div class="interactive-title">Интерактивный SVG-атлас: Три типа структуры композитов</div>
+          <p style="font-size: 0.92rem;">Переключай виды разрезов, чтобы увидеть, как наполнитель распределяется внутри матрицы:</p>
+
+          <div class="sort-buttons" style="justify-content: center; margin-bottom: 10px;" id="compStructBtns">
+            <button class="choice-btn selected" onclick="showCompStruct('fiber', this)">1. Волокнистые</button>
+            <button class="choice-btn" onclick="showCompStruct('layered', this)">2. Слоистые</button>
+            <button class="choice-btn" onclick="showCompStruct('particle', this)">3. Дисперсно-упрочнённые</button>
+          </div>
+
+          <div class="svg-box" id="compStructSvg"></div>
+          <div class="info-box" id="compStructDesc"></div>
+        </div>
+
+        <h3>Самые известные композиционные материалы:</h3>
+        <div class="table-wrap">
+          <table class="mat-table">
+            <thead>
+              <tr>
+                <th>Композит</th>
+                <th>Матрица (связующее)</th>
+                <th>Наполнитель (армирование)</th>
+                <th>Где применяется</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Железобетон</strong></td>
+                <td>Бетон (цемент + песок + щебень)</td>
+                <td>Стальная арматура (стержни)</td>
+                <td>Фундаменты, мосты, плиты перекрытий, плотины</td>
+              </tr>
+              <tr>
+                <td><strong>Фанера</strong></td>
+                <td>Синтетический или природный клей</td>
+                <td>Листы древесного шпона (волокна перпендикулярно)</td>
+                <td>Мебель, авиамодели, лазерная резка, строительство</td>
+              </tr>
+              <tr>
+                <td><strong>Стеклопластик</strong></td>
+                <td>Полиэфирная или эпоксидная смола</td>
+                <td>Стекловолокно (стеклоткань)</td>
+                <td>Корпуса катеров и яхт, водные горки, трубы, бамперы</td>
+              </tr>
+              <tr>
+                <td><strong>Углепластик (карбон)</strong></td>
+                <td>Эпоксидная полимерная смола</td>
+                <td>Углеродное волокно (углеткань)</td>
+                <td>Крылья самолётов, болиды Формулы-1, рамы велосипедов, протезы</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="interactive-zone">
+          <div class="interactive-title">Тренажёр: Определи наполнитель (армирование) в каждом композите</div>
+          <div id="m2Container"></div>
+          <button class="btn btn-sm" onclick="checkM2()">Проверить ответы</button>
+          <div class="feedback" id="m2Feedback"></div>
+        </div>
+
+        <div class="nav-footer">
+          <button class="btn btn-secondary" onclick="goToStep(1)">← Назад</button>
+          <button class="btn" onclick="goToStep(3)">Дальше: Лаборатория композитов →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ШАГ 3: ЛАБОРАТОРИЯ ИНЖЕНЕРА-МАТЕРИАЛОВЕДА -->
+    <section class="module" id="step-3">
+      <div class="card">
+        <span class="time-tag">Модуль 3 • Рекомендуемое время: 13 минут</span>
+        <h2>3. Практикум: Лаборатория инженера-материаловеда</h2>
+        <p>В твоё конструкторское бюро поступили <strong>3 инженерных заказа</strong>. Переключай вкладки заказов, подбирай нужную пару <strong>«Матрица + Наполнитель»</strong> и проверяй, подходит ли созданный композит для эксплуатации!</p>
+
+        <div class="interactive-zone">
+          <div class="mission-badges">
+            <span class="m-badge" id="badgeOrder1">Заказ 1 (Мост): не выполнен</span>
+            <span class="m-badge" id="badgeOrder2">Заказ 2 (Катер): не выполнен</span>
+            <span class="m-badge" id="badgeOrder3">Заказ 3 (Велорама): не выполнен</span>
+          </div>
+
+          <div class="sort-buttons" style="margin-bottom: 12px;" id="orderTabs">
+            <button class="choice-btn selected" onclick="selectOrder(1, this)">Заказ 1: Плита моста</button>
+            <button class="choice-btn" onclick="selectOrder(2, this)">Заказ 2: Корпус катера</button>
+            <button class="choice-btn" onclick="selectOrder(3, this)">Заказ 3: Рама спортбайка</button>
+          </div>
+
+          <div class="callout" id="orderDescBox" style="margin-top: 0;"></div>
+
+          <div class="lab-grid">
+            <div>
+              <div style="font-weight: 700; font-size: 0.92rem; margin-bottom: 6px;">1. Выбери матрицу (связующее):</div>
+              <div class="sort-buttons" style="margin-bottom: 14px;" id="labMatBtns">
+                <button class="choice-btn selected" onclick="setLabChoice('matrix', 'concrete', this)">Бетон</button>
+                <button class="choice-btn" onclick="setLabChoice('matrix', 'resin', this)">Полимерная смола</button>
+                <button class="choice-btn" onclick="setLabChoice('matrix', 'glue', this)">Столярный клей</button>
+              </div>
+
+              <div style="font-weight: 700; font-size: 0.92rem; margin-bottom: 6px;">2. Выбери наполнитель (армирование):</div>
+              <div class="sort-buttons" style="margin-bottom: 14px;" id="labFillBtns">
+                <button class="choice-btn selected" onclick="setLabChoice('filler', 'rebar', this)">Стальная арматура</button>
+                <button class="choice-btn" onclick="setLabChoice('filler', 'glass', this)">Стекловолокно</button>
+                <button class="choice-btn" onclick="setLabChoice('filler', 'carbon', this)">Углеродное волокно</button>
+                <button class="choice-btn" onclick="setLabChoice('filler', 'veneer', this)">Листы шпона</button>
+              </div>
+
+              <button class="btn btn-sm btn-success" onclick="submitOrderComposite()">Отправить материал в производство</button>
+              <div class="feedback" id="labFeedback"></div>
+            </div>
+
+            <div>
+              <div class="svg-box" style="margin-top: 0;" id="labPreviewSvg"></div>
+              <div class="telemetry-panel" id="labTelemetry"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-footer">
+          <button class="btn btn-secondary" onclick="goToStep(2)">← Назад</button>
+          <button class="btn" onclick="goToStep(4)">Перейти к итоговому контролю →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ШАГ 4: ИТОГОВЫЙ КОНТРОЛЬ -->
+    <section class="module" id="step-4">
+      <div class="card">
+        <span class="time-tag">Модуль 4 • Рекомендуемое время: 8 минут</span>
+        <h2>4. Итоговый контроль знаний</h2>
+        <p>Ответь на 8 вопросов по всем разделам урока. После проверки ты увидишь пояснения к ошибочным ответам и получишь именную карточку с оценкой.</p>
+
+        <div id="finalQuizContainer"></div>
+
+        <button class="btn btn-success" style="width: 100%; margin-top: 10px;" onclick="finishLesson()">Завершить урок и получить оценку</button>
+
+        <div id="certificateSection" style="display: none;">
+          <div class="cert-box">
+            <div style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); font-weight: 700;">
+              Карточка прохождения урока • Труд (технология) 7 класс
+            </div>
+            <div class="cert-date-badge">Дата урока: 26 ноября 2026 г. (26.11.2026)</div>
+            <h2 id="certStudentName" style="margin: 8px 0; color: var(--text);">Ученик 7 класса</h2>
+            <p style="margin-bottom: 4px;">Тема: «Классификация конструкционных материалов. Композиционные материалы»</p>
+            <div class="cert-grade" id="certGradeText">Оценка: 5 (Отлично)</div>
+            <p id="certStats" style="font-weight: 600;"></p>
+            <p id="certPracticeSummary" style="font-size: 0.9rem; color: var(--text-muted);"></p>
+            <p id="certCode" style="font-family: monospace; font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;"></p>
+            <div class="callout success" style="text-align: left; margin-top: 12px;">
+              Сделай скриншот этой карточки и отправь учителю для выставления оценки в журнал!
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-footer">
+          <button class="btn btn-secondary" onclick="goToStep(3)">← Вернуться в лабораторию</button>
+          <button class="btn btn-secondary btn-sm" onclick="resetAll()">Пройти заново</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // --- СОСТОЯНИЕ УРОКА ---
+    const state = {
+      currentStep: 0,
+      completedSteps: [false, false, false, false, false],
+      secondsElapsed: 0,
+      studentName: "",
+      currentOrder: 1,
+      lab: { matrix: "concrete", filler: "rebar" },
+      ordersSolved: { 1: false, 2: false, 3: false }
+    };
+
+    // --- ТАЙМЕР ---
+    setInterval(() => {
+      state.secondsElapsed++;
+      const m = String(Math.floor(state.secondsElapsed / 60)).padStart(2, "0");
+      const s = String(state.secondsElapsed % 60).padStart(2, "0");
+      document.getElementById("timerDisplay").textContent = `Время: ${m}:${s} / 45:00`;
+    }, 1000);
+
+    // --- НАВИГАЦИЯ ---
+    function goToStep(idx) {
+      document.querySelectorAll(".module").forEach((el, i) => el.classList.toggle("active", idx === i));
+      document.querySelectorAll(".nav-pill").forEach((pill, i) => {
+        pill.classList.toggle("active", idx === i);
+        pill.classList.toggle("done", state.completedSteps[i]);
+      });
+      state.currentStep = idx;
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function markStepDone(idx) {
+      state.completedSteps[idx] = true;
+      const pills = document.querySelectorAll(".nav-pill");
+      if (pills[idx]) pills[idx].classList.add("done");
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const done = state.completedSteps.filter(Boolean).length;
+      const pct = Math.min(100, Math.round((done / 4) * 100));
+      document.getElementById("progressBar").style.width = `${pct}%`;
+    }
+
+    function startLesson() {
+      const val = document.getElementById("studentNameInput").value.trim();
+      state.studentName = val || "Ученик 7 класса";
+      markStepDone(0);
+      goToStep(1);
+    }
+
+    // --- УНИВЕРСАЛЬНЫЙ РЕНДЕР ТРЕНАЖЁРОВ ---
+    const sortStorage = { m1Container: {}, m2Container: {} };
+
+    function buildSortModule(containerId, items, options) {
+      const box = document.getElementById(containerId);
+      box.innerHTML = "";
+      items.forEach((item, idx) => {
+        const div = document.createElement("div");
+        div.className = "sort-item";
+        div.innerHTML = `
+          <div class="sort-item-text"><strong>${idx + 1}.</strong> ${item.text}</div>
+          <div class="sort-buttons" id="${containerId}-btns-${idx}">
+            ${options.map(opt => `
+              <button class="choice-btn" onclick="selectSortOption('${containerId}', ${idx}, '${opt}', this)">${opt}</button>
+            `).join("")}
+          </div>
+        `;
+        box.appendChild(div);
+      });
+    }
+
+    function selectSortOption(containerId, idx, opt, btn) {
+      sortStorage[containerId][idx] = opt;
+      const group = document.getElementById(`${containerId}-btns-${idx}`);
+      group.querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected", "correct", "wrong"));
+      btn.classList.add("selected");
+    }
+
+    function evaluateSortModule(containerId, items, feedbackId, onSuccess) {
+      let ok = 0;
+      items.forEach((item, idx) => {
+        const group = document.getElementById(`${containerId}-btns-${idx}`);
+        const chosen = sortStorage[containerId][idx];
+        group.querySelectorAll(".choice-btn").forEach(b => {
+          b.classList.remove("selected", "correct", "wrong");
+          if (b.textContent === chosen) {
+            if (chosen === item.answer) {
+              b.classList.add("correct");
+              ok++;
+            } else {
+              b.classList.add("wrong");
+            }
+          }
+        });
+      });
+      const fb = document.getElementById(feedbackId);
+      if (ok === items.length) {
+        fb.style.color = "var(--success)";
+        fb.textContent = `Отлично! Все ${ok} из ${items.length} ответов верны!`;
+        if (onSuccess) onSuccess();
+      } else {
+        fb.style.color = "var(--warning)";
+        fb.textContent = `Правильно: ${ok} из ${items.length}. Исправь выделенные красным пункты.`;
+      }
+    }
+
+    // --- МОДУЛЬ 1: МЕНТАЛЬНАЯ КАРТА МАТЕРИАЛОВ ---
+    const matDetails = {
+      metals: "<strong>1. Металлы и сплавы:</strong> делятся на <em>чёрные</em> (сплавы железа с углеродом — сталь, чугун) и <em>цветные</em> (алюминий, медь, титан, латунь, бронза). Отличаются высокой прочностью, электро- и теплопроводностью, но многие чёрные металлы подвержены коррозии (ржавчине) и имеют большой вес.",
+      wood: "<strong>2. Древесина и древесные материалы:</strong> натуральный массив (сосна, берёза, дуб) и листовые материалы (фанера, ДВП, ДСП, МДФ). Лёгкие, экологичные, простые в обработке резанием, но боятся открытого огня и избыточной влаги.",
+      polymers: "<strong>3. Полимерные материалы (пластмассы и резина):</strong> полиэтилен, ПВХ, оргстекло, PLA, PETG, ABS. Очень лёгкие, не ржавеют, являются электроизоляторами и легко формуются при нагреве, но уступают металлам в жаростойкости.",
+      ceramics: "<strong>4. Керамика и стекло:</strong> технический фарфор, кирпич, закалённое стекло, карбид кремния. Обладают экстремальной твёрдостью, жаростойкостью и химической инертностью, однако хрупки при резких ударах.",
+      composites: "<strong>5. Композиционные материалы:</strong> искусственные многокомпонентные материалы (матрица + наполнитель). Сочетают малый вес и сверхвысокую прочность, вытесняя металлы в авиации, космонавтике, строительстве и спорте."
+    };
+
+    function showMatNode(key, btn) {
+      document.querySelectorAll("#matMindmap .mm-node").forEach(el => el.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+      document.getElementById("matNodeDetail").innerHTML = matDetails[key];
+    }
+    showMatNode("metals");
+
+    const m1Data = [
+      { text: "Алюминий, медь, латунь и титан относятся к группе...", answer: "Цветные металлы и сплавы" },
+      { text: "Сталь и чугун относятся к группе...", answer: "Чёрные металлы и сплавы" },
+      { text: "Пластик PETG, полиэтилен и оргстекло относятся к группе...", answer: "Полимеры" },
+      { text: "Способность материала выдерживать внешние нагрузки без разрушения (прочность, упругость) — это...", answer: "Механические свойства" },
+      { text: "Способность металла поддаваться сварке, ковке или обработке резанием — это...", answer: "Технологические свойства" }
+    ];
+    buildSortModule("m1Container", m1Data, [
+      "Чёрные металлы и сплавы",
+      "Цветные металлы и сплавы",
+      "Полимеры",
+      "Механические свойства",
+      "Технологические свойства"
+    ]);
+    function checkM1() {
+      evaluateSortModule("m1Container", m1Data, "m1Feedback", () => markStepDone(1));
+    }
+
+    // --- МОДУЛЬ 2: SVG-АТЛАС СТРУКТУР КОМПОЗИТОВ ---
+    function showCompStruct(type, btn) {
+      if (btn) {
+        document.getElementById("compStructBtns").querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected"));
+        btn.classList.add("selected");
+      }
+      const svgOut = document.getElementById("compStructSvg");
+      const descOut = document.getElementById("compStructDesc");
+
+      if (type === "fiber") {
+        svgOut.innerHTML = `
+          <svg viewBox="0 0 420 155" style="max-width:420px;">
+            <rect x="40" y="20" width="340" height="104" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5" />
+            <!-- Волокна вдоль -->
+            <line x1="48" y1="38" x2="372" y2="38" stroke="#0f172a" stroke-width="5" stroke-linecap="round" />
+            <line x1="48" y1="58" x2="372" y2="58" stroke="#0f172a" stroke-width="5" stroke-linecap="round" />
+            <line x1="48" y1="78" x2="372" y2="78" stroke="#0f172a" stroke-width="5" stroke-linecap="round" />
+            <line x1="48" y1="98" x2="372" y2="98" stroke="#0f172a" stroke-width="5" stroke-linecap="round" />
+            <line x1="48" y1="112" x2="372" y2="112" stroke="#0f172a" stroke-width="5" stroke-linecap="round" />
+            <!-- Перекрёстные волокна -->
+            <line x1="110" y1="25" x2="110" y2="119" stroke="#334155" stroke-width="3" stroke-dasharray="6,4" />
+            <line x1="210" y1="25" x2="210" y2="119" stroke="#334155" stroke-width="3" stroke-dasharray="6,4" />
+            <line x1="310" y1="25" x2="310" y2="119" stroke="#334155" stroke-width="3" stroke-dasharray="6,4" />
+            <text x="210" y="144" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Матрица (смола) + прочные нити/волокна (наполнитель)</text>
+          </svg>
+        `;
+        descOut.innerHTML = "<strong>1. Волокнистые композиты:</strong> матрица пропитывает и скрепляет тонкие сверхпрочные волокна или ткани (стекловолокно, углеродное волокно, кевлар). Обеспечивают рекордную прочность при минимальном весе. <em>Примеры:</em> стеклопластик, углепластик (карбон).";
+      } else if (type === "layered") {
+        svgOut.innerHTML = `
+          <svg viewBox="0 0 420 155" style="max-width:420px;">
+            <rect x="45" y="22" width="330" height="22" fill="#fde68a" stroke="#b45309" stroke-width="1.8" />
+            <rect x="45" y="44" width="330" height="5" fill="#0f766e" />
+            <rect x="45" y="49" width="330" height="22" fill="#fcd34d" stroke="#b45309" stroke-width="1.8" />
+            <rect x="45" y="71" width="330" height="5" fill="#0f766e" />
+            <rect x="45" y="76" width="330" height="22" fill="#fde68a" stroke="#b45309" stroke-width="1.8" />
+            <rect x="45" y="98" width="330" height="5" fill="#0f766e" />
+            <rect x="45" y="103" width="330" height="22" fill="#fcd34d" stroke="#b45309" stroke-width="1.8" />
+            <text x="210" y="144" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">Чередующиеся слои наполнителя, соединённые матрицей-клеем</text>
+          </svg>
+        `;
+        descOut.innerHTML = "<strong>2. Слоистые композиты:</strong> состоят из плотно склеенных или спрессованных слоёв разных материалов (или слоёв одного материала с разным направлением волокон). Не растрескиваются и устойчивы к изгибу. <em>Примеры:</em> фанера, текстолит, автомобильное стекло «триплекс».";
+      } else {
+        svgOut.innerHTML = `
+          <svg viewBox="0 0 420 155" style="max-width:420px;">
+            <rect x="40" y="20" width="340" height="104" rx="10" fill="#e2e8f0" stroke="#475569" stroke-width="2.5" />
+            <circle cx="85" cy="48" r="10" fill="#64748b" />
+            <circle cx="145" cy="92" r="13" fill="#475569" />
+            <circle cx="195" cy="45" r="8" fill="#64748b" />
+            <circle cx="240" cy="88" r="11" fill="#334155" />
+            <circle cx="295" cy="50" r="12" fill="#475569" />
+            <circle cx="340" cy="94" r="9" fill="#64748b" />
+            <circle cx="95" cy="98" r="7" fill="#334155" />
+            <circle cx="155" cy="54" r="6" fill="#334155" />
+            <circle cx="255" cy="48" r="7" fill="#64748b" />
+            <circle cx="335" cy="46" r="8" fill="#334155" />
+            <text x="210" y="144" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">Матрица с равномерно распределёнными твёрдыми частицами</text>
+          </svg>
+        `;
+        descOut.innerHTML = "<strong>3. Дисперсно-упрочнённые композиты:</strong> в матрице равномерно распределены мелкие твёрдые зёрна, стружка или порошок (наполнитель), повышающие твёрдость и износостойкость. <em>Примеры:</em> бетон (цемент + щебень/песок), ДСП (смола + древесная стружка), металлокерамика.";
+      }
+    }
+    showCompStruct("fiber");
+
+    const m2Data = [
+      { text: "Железобетон (матрица — бетон)", answer: "Стальная арматура" },
+      { text: "Углепластик / карбон (матрица — эпоксидная смола)", answer: "Углеродное волокно" },
+      { text: "Стеклопластик (матрица — полиэфирная смола)", answer: "Стекловолокно" },
+      { text: "Фанера (матрица — столярный/синтетический клей)", answer: "Листы шпона" }
+    ];
+    buildSortModule("m2Container", m2Data, ["Стальная арматура", "Углеродное волокно", "Стекловолокно", "Листы шпона"]);
+    function checkM2() {
+      evaluateSortModule("m2Container", m2Data, "m2Feedback", () => markStepDone(2));
+    }
+
+    // --- МОДУЛЬ 3: ЛАБОРАТОРИЯ КОНСТРУКТОРА КОМПОЗИТОВ ---
+    const ordersConfig = {
+      1: {
+        title: "Заказ 1: Несущая плита автомобильного моста",
+        desc: "<strong>Заказ 1 — Несущая плита моста:</strong> требуется массивный, негорючий и доступный строительный композит, который одновременно выдерживает колоссальное сжатие и изгибающие нагрузки.",
+        needMatrix: "concrete",
+        needFiller: "rebar",
+        successMsg: "Верно! Сочетание «Бетон + Стальная арматура» даёт Железобетон — идеальный материал для мостовых конструкций."
+      },
+      2: {
+        title: "Заказ 2: Корпус морского прогулочного катера",
+        desc: "<strong>Заказ 2 — Корпус катера:</strong> нужен лёгкий, водонепроницаемый и не подверженный ржавчине композит с оптимальной ценой для изготовления обтекаемого корпуса лодки.",
+        needMatrix: "resin",
+        needFiller: "glass",
+        successMsg: "Верно! «Полимерная смола + Стекловолокно» образуют Стеклопластик — лёгкий, прочный и полностью стойкий к воде."
+      },
+      3: {
+        title: "Заказ 3: Рама профессионального гоночного велосипеда",
+        desc: "<strong>Заказ 3 — Рама гоночного велосипеда:</strong> требуется ультралёгкий и максимально жёсткий композит, прочнее стали по удельной прочности (отношению прочности к весу).",
+        needMatrix: "resin",
+        needFiller: "carbon",
+        successMsg: "Верно! «Полимерная смола + Углеродное волокно» дают Углепластик (карбон) — лидер по соотношению прочности и малого веса."
+      }
+    };
+
+    const comboCatalog = {
+      "concrete+rebar": { name: "Железобетон", strength: 95, lightness: 18, water: 85, bg: "#cbd5e1", accent: "#475569", note: "Выдерживает огромные нагрузки на сжатие и растяжение, негорючий, тяжёлый." },
+      "resin+glass": { name: "Стеклопластик", strength: 80, lightness: 82, water: 98, bg: "#dbeafe", accent: "#2563eb", note: "Лёгкий, абсолютно не ржавеет в воде, хорошо формуется в сложные обтекаемые корпуса." },
+      "resin+carbon": { name: "Углепластик (Карбон)", strength: 98, lightness: 96, water: 95, bg: "#1e293b", accent: "#38bdf8", note: "Сверхлёгкий и исключительно жёсткий материал для авиации и профессионального спорта." },
+      "glue+veneer": { name: "Фанера", strength: 58, lightness: 76, water: 40, bg: "#fef3c7", accent: "#b45309", note: "Удобный листовой слоистый композит для мебели, макетов и лазерной резки." }
+    };
+
+    function selectOrder(num, btn) {
+      state.currentOrder = num;
+      if (btn) {
+        document.getElementById("orderTabs").querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected"));
+        btn.classList.add("selected");
+      }
+      document.getElementById("orderDescBox").innerHTML = ordersConfig[num].desc;
+      document.getElementById("labFeedback").textContent = "";
+      renderLabPreview();
+    }
+
+    function setLabChoice(type, val, btn) {
+      state.lab[type] = val;
+      const boxId = type === "matrix" ? "labMatBtns" : "labFillBtns";
+      document.getElementById(boxId).querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected"));
+      btn.classList.add("selected");
+      document.getElementById("labFeedback").textContent = "";
+      renderLabPreview();
+    }
+
+    function renderLabPreview() {
+      const key = `${state.lab.matrix}+${state.lab.filler}`;
+      const info = comboCatalog[key] || {
+        name: "Экспериментальная смесь (нетехнологичное сочетание)",
+        strength: 25,
+        lightness: 45,
+        water: 30,
+        bg: "#f1f5f9",
+        accent: "#dc2626",
+        note: "Выбранная матрица плохо связывает данный наполнитель — композит не обеспечивает нужных эксплуатационных качеств."
+      };
+
+      const mNames = { concrete: "Бетон", resin: "Полимерная смола", glue: "Столярный клей" };
+      const fNames = { rebar: "Стальная арматура", glass: "Стекловолокно", carbon: "Углеволокно", veneer: "Шпон" };
+
+      let patternSvg = "";
+      if (state.lab.filler === "rebar") {
+        patternSvg = `
+          <line x1="45" y1="55" x2="295" y2="55" stroke="#334155" stroke-width="6" />
+          <line x1="45" y1="95" x2="295" y2="95" stroke="#334155" stroke-width="6" />
+          <line x1="90" y1="35" x2="90" y2="115" stroke="#475569" stroke-width="4" />
+          <line x1="170" y1="35" x2="170" y2="115" stroke="#475569" stroke-width="4" />
+          <line x1="250" y1="35" x2="250" y2="115" stroke="#475569" stroke-width="4" />
+        `;
+      } else if (state.lab.filler === "veneer") {
+        patternSvg = `
+          <rect x="45" y="42" width="250" height="16" fill="#fde68a" stroke="#b45309" stroke-width="1.5" />
+          <rect x="45" y="64" width="250" height="16" fill="#fcd34d" stroke="#b45309" stroke-width="1.5" />
+          <rect x="45" y="86" width="250" height="16" fill="#fde68a" stroke="#b45309" stroke-width="1.5" />
+        `;
+      } else {
+        const lineCol = state.lab.filler === "carbon" ? "#38bdf8" : "#1d4ed8";
+        for (let y = 42; y <= 106; y += 12) {
+          patternSvg += `<line x1="45" y1="${y}" x2="295" y2="${y}" stroke="${lineCol}" stroke-width="2.2" stroke-opacity="0.75" />`;
+        }
+        for (let x = 65; x <= 275; x += 35) {
+          patternSvg += `<line x1="${x}" y1="36" x2="${x}" y2="112" stroke="${lineCol}" stroke-width="1.8" stroke-dasharray="5,3" stroke-opacity="0.6" />`;
+        }
+      }
+
+      document.getElementById("labPreviewSvg").innerHTML = `
+        <svg viewBox="0 0 340 150" style="max-width:340px;">
+          <rect x="35" y="28" width="270" height="92" rx="12" fill="${info.bg}" stroke="${info.accent}" stroke-width="3" />
+          ${patternSvg}
+          <text x="170" y="18" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">Образец: ${info.name}</text>
+          <text x="170" y="140" font-size="11" font-weight="bold" text-anchor="middle" fill="#475569">${mNames[state.lab.matrix]} + ${fNames[state.lab.filler]}</text>
+        </svg>
+      `;
+
+      document.getElementById("labTelemetry").innerHTML = `
+        <div><strong>Полученный материал:</strong> ${info.name}</div>
+        <div class="meter-row">Прочность: ${info.strength}%<div class="meter-track"><div class="meter-fill" style="width:${info.strength}%;"></div></div></div>
+        <div class="meter-row">Лёгкость (малый вес): ${info.lightness}%<div class="meter-track"><div class="meter-fill" style="width:${info.lightness}%; background:#38bdf8;"></div></div></div>
+        <div class="meter-row">Влагостойкость: ${info.water}%<div class="meter-track"><div class="meter-fill" style="width:${info.water}%; background:#a78bfa;"></div></div></div>
+        <div style="margin-top:8px; color:#cbd5e1; font-size:0.83rem;">${info.note}</div>
+      `;
+    }
+
+    function submitOrderComposite() {
+      const ord = ordersConfig[state.currentOrder];
+      const fb = document.getElementById("labFeedback");
+
+      if (state.lab.matrix === ord.needMatrix && state.lab.filler === ord.needFiller) {
+        state.ordersSolved[state.currentOrder] = true;
+        const b = document.getElementById(`badgeOrder${state.currentOrder}`);
+        b.classList.add("solved");
+        b.textContent = b.textContent.replace("не выполнен", "выполнен ✓");
+        fb.style.color = "var(--success)";
+        fb.textContent = ord.successMsg;
+
+        if (state.ordersSolved[1] && state.ordersSolved[2] && state.ordersSolved[3]) {
+          markStepDone(3);
+        }
+      } else {
+        fb.style.color = "var(--danger)";
+        fb.textContent = "Эта комбинация не подходит под требования заказа. Посмотри на таблицу композитов из Модуля 2 и подбери правильную пару «матрица + наполнитель».";
+      }
+    }
+
+    selectOrder(1);
+
+    // --- МОДУЛЬ 4: ИТОГОВЫЙ ТЕСТ С РАЗБОРОМ ОШИБОК ---
+    const quizData = [
+      {
+        q: "1. Какие материалы называют конструкционными?",
+        options: [
+          "Материалы, из которых изготавливают детали машин, механизмов, сооружений и изделий, воспринимающих нагрузки",
+          "Только продукты питания и красители",
+          "Исключительно бумага и картон"
+        ],
+        correct: 0,
+        explain: "Конструкционные материалы применяют для создания деталей, конструкций и изделий, испытывающих механические и эксплуатационные нагрузки."
+      },
+      {
+        q: "2. К какой группе конструкционных материалов относятся сталь и чугун?",
+        options: [
+          "Чёрные металлы и сплавы",
+          "Цветные металлы и сплавы",
+          "Полимерные материалы"
+        ],
+        correct: 0,
+        explain: "Сталь и чугун — это сплавы железа с углеродом, относящиеся к чёрным металлам."
+      },
+      {
+        q: "3. Из каких двух обязательных частей состоит любой композиционный материал?",
+        options: [
+          "Из двух одинаковых металлических листов",
+          "Из матрицы (связующего) и наполнителя (армирующего компонента)",
+          "Из воды и песка"
+        ],
+        correct: 1,
+        explain: "Основа любого композита — непрерывная матрица и распределённый в ней прочный наполнитель (волокна, слои, стержни или частицы)."
+      },
+      {
+        q: "4. Какую функцию выполняет матрица в композиционном материале?",
+        options: [
+          "Придаёт изделию форму, связывает наполнитель в единое целое, защищает его и передаёт нагрузку",
+          "Только окрашивает изделие сверху после изготовления",
+          "Удаляется из готовой детали перед использованием"
+        ],
+        correct: 0,
+        explain: "Матрица скрепляет армирующие элементы, формирует монолитную деталь и распределяет внешние усилия."
+      },
+      {
+        q: "5. Почему в железобетоне внутрь бетона помещают стальную арматуру?",
+        options: [
+          "Чтобы уменьшить вес плиты в два раза",
+          "Потому что бетон хорошо работает на сжатие, но хрупок на растяжение, а стальная арматура берёт на себя нагрузки растяжения и изгиба",
+          "Только для защиты бетона от воды"
+        ],
+        correct: 1,
+        explain: "В железобетоне проявляется синергетический эффект: бетон воспринимает сжатие, а стальная арматура — растяжение."
+      },
+      {
+        q: "6. Какой композиционный материал состоит из эпоксидной смолы и углеродного волокна и ценится в авиации за сочетание сверхвысокой прочности и малого веса?",
+        options: ["Фанера", "Углепластик (карбон)", "Железобетон"],
+        correct: 1,
+        explain: "Углепластик (карбон) — волокнистый композит из полимерной матрицы и углеродных волокон."
+      },
+      {
+        q: "7. К какому виду композитов по структуре относится фанера (склеенные листы шпона с перекрёстным направлением волокон)?",
+        options: [
+          "Слоистый композит",
+          "Чистый металл",
+          "Керамика"
+        ],
+        correct: 0,
+        explain: "Фанера образована чередованием слоёв древесного шпона и клея — это классический слоистый композиционный материал."
+      },
+      {
+        q: "8. Какой композит чаще всего применяют для изготовления лёгких, прочных и не ржавеющих в воде корпусов лодок и катеров?",
+        options: ["Чугун", "Стеклопластик", "ДСП"],
+        correct: 1,
+        explain: "Стеклопластик (полимерная смола + стекловолокно) влагостоек, не корродирует и легко принимает обтекаемую форму корпуса."
+      }
+    ];
+    const quizAnswers = {};
+
+    function renderQuiz() {
+      const box = document.getElementById("finalQuizContainer");
+      box.innerHTML = "";
+      quizData.forEach((item, qIdx) => {
+        const div = document.createElement("div");
+        div.className = "quiz-q";
+        div.innerHTML = `
+          <div><strong>${item.q}</strong></div>
+          <div id="quiz-opts-${qIdx}">
+            ${item.options.map((opt, oIdx) => `
+              <button class="quiz-opt" onclick="selectQuiz(${qIdx}, ${oIdx}, this)">${opt}</button>
+            `).join("")}
+          </div>
+          <div class="quiz-explain" id="quiz-exp-${qIdx}"><strong>Пояснение:</strong> ${item.explain}</div>
+        `;
+        box.appendChild(div);
+      });
+    }
+
+    function selectQuiz(qIdx, oIdx, btn) {
+      quizAnswers[qIdx] = oIdx;
+      const box = document.getElementById(`quiz-opts-${qIdx}`);
+      box.querySelectorAll(".quiz-opt").forEach(b => b.classList.remove("selected", "correct", "wrong"));
+      btn.classList.add("selected");
+    }
+
+    function finishLesson() {
+      if (Object.keys(quizAnswers).length < quizData.length) {
+        alert("Ответь на все 8 вопросов теста перед завершением урока!");
+        return;
+      }
+
+      let score = 0;
+      quizData.forEach((item, qIdx) => {
+        const chosen = quizAnswers[qIdx];
+        const box = document.getElementById(`quiz-opts-${qIdx}`);
+        const exp = document.getElementById(`quiz-exp-${qIdx}`);
+        box.querySelectorAll(".quiz-opt").forEach((b, oIdx) => {
+          b.classList.remove("selected", "correct", "wrong");
+          if (oIdx === item.correct) b.classList.add("correct");
+          else if (oIdx === chosen && chosen !== item.correct) b.classList.add("wrong");
+        });
+        if (chosen === item.correct) {
+          score++;
+          exp.style.display = "none";
+        } else {
+          exp.style.display = "block";
+        }
+      });
+
+      const pct = Math.round((score / quizData.length) * 100);
+      let grade = 2;
+      let label = "Нужно повторить тему";
+      if (score >= 7) { grade = 5; label = "Отлично"; }
+      else if (score >= 5) { grade = 4; label = "Хорошо"; }
+      else if (score >= 4) { grade = 3; label = "Удовлетворительно"; }
+
+      markStepDone(4);
+      const mins = Math.max(1, Math.round(state.secondsElapsed / 60));
+      const practiceDone = [state.completedSteps[1], state.completedSteps[2], state.completedSteps[3]].filter(Boolean).length;
+      const code = `TECH7-COMP-261126-${score}${grade}`;
+
+      document.getElementById("certStudentName").textContent = state.studentName || "Ученик 7 класса";
+      document.getElementById("certGradeText").textContent = `Оценка: ${grade} (${label})`;
+      document.getElementById("certStats").textContent = `Тест: ${score} из ${quizData.length} (${pct}%) • Время работы: ~${mins} мин.`;
+      document.getElementById("certPracticeSummary").textContent = `Выполнено практических модулей: ${practiceDone} из 3`;
+      document.getElementById("certCode").textContent = `Код проверки: ${code}`;
+      document.getElementById("certificateSection").style.display = "block";
+      document.getElementById("certificateSection").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function resetAll() {
+      if (confirm("Сбросить прогресс и пройти урок заново?")) {
+        location.reload();
+      }
+    }
+
+    renderQuiz();
+  </script>
+</body>
+</html>
